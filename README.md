@@ -19,3 +19,14 @@ Usage: check_curl [OPTIONS]
 ```
 OK: 34% free memory |free=34%;15;10;0;100
 ```
+
+## Command Template
+```
+object CheckCommand "check-ram" {
+  command = [ ConfigDir + "/scripts/check_ram.sh" ]
+  arguments += {
+    "-c" = "$cfr_critical$"
+    "-w" = "$cfr_warning$"
+  }
+}
+```
