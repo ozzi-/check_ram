@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 # startup checks
 
 if [ -z "$BASH" ]; then
