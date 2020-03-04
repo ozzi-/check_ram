@@ -16,4 +16,6 @@ Usage: check_curl [OPTIONS]
 ```
 
 ## Example Output
+```
 OK: 34% free memory |free=34%;15;10;0;100
+```
