@@ -30,3 +30,7 @@ object CheckCommand "check-ram" {
   }
 }
 ```
+
+## Screenshot
+![graph](https://i.imgur.com/SDIXisP.png)
+
