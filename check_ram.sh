@@ -62,3 +62,4 @@ if [ $percent -lt $critical ]; then
   code=2
 fi
 echo "$resp: $percent% free memory |free=$percent%;${warning};${critical};0;100"
+exit $code
