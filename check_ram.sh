@@ -20,7 +20,7 @@ critical=10
 
 # Usage Info
 usage() {
-  echo '''Usage: check_curl [OPTIONS]
+  echo '''Usage: check_ram [OPTIONS]
   [OPTIONS]:
   -w WARNING        Warning threshold in percent of free memory (default: 15%)
   -c CRITICAL       Critical threshold in percent of free memory (default: 10%)'''
