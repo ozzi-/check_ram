@@ -9,7 +9,7 @@ apt install free
 
 ## Usage
 ```
-Usage: check_curl [OPTIONS]
+Usage: check_ram [OPTIONS]
   [OPTIONS]:
   -w WARNING        Warning threshold in percent of free memory (default: 15%)
   -c CRITICAL       Critical threshold in percent of free memory (default: 10%)
