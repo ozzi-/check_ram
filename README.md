@@ -11,13 +11,13 @@ apt install free
 ```
 Usage: check_ram [OPTIONS]
   [OPTIONS]:
-  -w WARNING        Warning threshold in percent of free memory (default: 15%)
-  -c CRITICAL       Critical threshold in percent of free memory (default: 10%)
+  -w WARNING        Warning threshold in percent of used memory (default: 80%)
+  -c CRITICAL       Critical threshold in percent of used memory (default: 90%)
 ```
 
 ## Example Output
 ```
-OK: 34% free memory |free=34%;15;10;0;100
+OK: 34% used memory |used=34%;80;90;0;100
 ```
 
 ## Command Template
