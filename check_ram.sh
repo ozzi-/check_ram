@@ -22,8 +22,8 @@ critical=90
 usage() {
   echo '''Usage: check_curl [OPTIONS]
   [OPTIONS]:
-  -w WARNING        Warning threshold in percent of used memory (default: 15%)
-  -c CRITICAL       Critical threshold in percent of used memory (default: 10%)'''
+  -w WARNING        Warning threshold in percent of used memory (default: 89%)
+  -c CRITICAL       Critical threshold in percent of used memory (default: 90%)'''
 }
 
 
