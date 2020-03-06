@@ -15,15 +15,15 @@ if [ $? -ne 0 ]; then
   exit 3
 fi
 
-warning=15
-critical=10
+warning=80
+critical=90
 
 # Usage Info
 usage() {
-  echo '''Usage: check_ram [OPTIONS]
+  echo '''Usage: check_curl [OPTIONS]
   [OPTIONS]:
-  -w WARNING        Warning threshold in percent of free memory (default: 15%)
-  -c CRITICAL       Critical threshold in percent of free memory (default: 10%)'''
+  -w WARNING        Warning threshold in percent of used memory (default: 15%)
+  -c CRITICAL       Critical threshold in percent of used memory (default: 10%)'''
 }
 
 
@@ -53,13 +53,12 @@ percent=$((200*$used/$total % 2 + 100*$used/$total))
 
 resp="OK"
 code=0
-if [ $percent -lt $warning ]; then
+if [ $percent -gt $warning ]; then
   resp="WARNING"
   code=1
 fi
-if [ $percent -lt $critical ]; then
+if [ $percent -gt $critical ]; then
   resp="CRITICAL"
   code=2
 fi
-echo "$resp: $percent% free memory |free=$percent%;${warning};${critical};0;100"
-exit $code
+echo "$resp: $percent% memory used |used=$percent%;${warning};${critical};0;100"
